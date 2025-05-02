@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Onarthok Rest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+		body { font-family: 'Segoe UI', sans-serif; }
+		h2, h3 { font-family: 'Playfair Display', serif; }
+			
+			/* Ensures all testimonial cards are the same height */
+		.swiper-slide {
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: space-between;
+		  height: 100%; /* Ensure all cards are full height */
+		}
+
+		.swiper-slide p {
+		  flex-grow: 1; /* Ensure the text area takes available space */
+		  overflow: hidden; /* Prevent text overflow */
+		  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+		}
+
+		/* Optional: Add a minimum height to the testimonial cards */
+		.swiper-slide {
+		  min-height: 350px; /* You can adjust this value to your preference */
+		}
+
+  </style>
+  <!-- Swiper.js (CDN) -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	
+
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- TOPBAR -->
+  <div class="bg-gray-100 text-sm py-2 px-4 flex justify-between items-center">
+    <div>
+      <span class="mr-4">📞 +123 456 7890</span>
+      <span>📍 Dhaka, Bangladesh</span>
+    </div>
+    <div class="space-x-3">
+      <a href="#" class="hover:text-red-600">Facebook</a>
+      <a href="#" class="hover:text-red-600">Instagram</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- 🔻 Logo -->
+    <a href="index.html" class="text-2xl font-bold text-red-600 font-[Playfair Display]">
+      OnarthokRest
+    </a>
+
+    <!-- 🔻 Toggle Button (Mobile) -->
+    <button id="menu-toggle" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+      ☰
+    </button>
+
+    <!-- 🔻 Nav Links -->
+    <nav id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-[60px] left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none p-4 md:p-0 z-50">
+      <a href="index.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">About</a>
+      <a href="menu.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Menu</a>
+      <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Gallery</a>
+      <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Blog</a>
+      <a href="reservation.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Reservation</a>
+      <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO SECTION -->
+<section class="relative h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1673307317880-5c3a71f7d00e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <h1 class="text-white text-4xl font-[Playfair Display] font-bold">About Us</h1>
+  </div>
+</section>
+
+
+
+  <!-- OUR STORY – UPGRADED -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 md:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4 font-[Playfair Display]">Welcome to Onarthok Rest</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        A celebration of flavor, passion, and culinary craftsmanship. Since 2020, we've turned simple meals into unforgettable moments.
+        Whether you're dining in with family, sharing tapas with friends, or enjoying a solo escape, every dish is prepared with love, care, and tradition.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1500" alt="Restaurant Interior" class="rounded-2xl shadow-xl" />
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-red-600 mb-4">Our Mission</h3>
+        <p class="text-gray-700 text-base leading-relaxed">
+          At Onarthok Rest, we believe great food brings people together. Our mission is to serve fresh, locally sourced ingredients
+          with a creative twist, while maintaining the warmth of true hospitality. We blend modern culinary techniques with timeless traditions
+          to offer a dining experience that delights all senses.
+        </p>
+        <p class="mt-4 text-gray-700 text-base leading-relaxed">
+          We’re more than a restaurant — we’re a destination for food lovers, storytellers, and memory makers.
+          Every plate has a purpose, and every visit feels like home.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CHEF SPOTLIGHT -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 font-[Playfair Display] mb-2">Meet Our Head Chef</h2>
+    <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+      Passionate. Skilled. Creative. Chef Arif Rahman brings decades of culinary artistry to your plate with every dish crafted from the soul.
+    </p>
+
+    <div class="flex flex-col items-center">
+      <img src="assets/images/chef.jpg" alt="Chef Arif" class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg mb-6" />
+      <h3 class="text-2xl font-semibold text-gray-800">Chef Arif Rahman</h3>
+      <span class="text-red-500 text-sm uppercase tracking-wide mb-4">Executive Chef & Co-Founder</span>
+      <p class="text-gray-700 max-w-xl leading-relaxed">
+        With over 20 years of experience in kitchens across Europe and Asia, Chef Arif masterfully blends traditional flavors
+        with modern flair. He believes every meal should tell a story — and yours begins here.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-[Playfair Display]">Why Choose Onarthok Rest?</h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+      Here’s what makes us stand out in a sea of restaurants. From our commitment to fresh, high-quality ingredients to our exceptional service, we strive to offer an unforgettable experience.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Feature 1 -->
+      <div class="p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+        <div class="text-red-500 text-4xl mb-4">
+          <i class="fas fa-leaf"></i> <!-- You can replace this with your own icon or an SVG -->
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Fresh Ingredients</h3>
+        <p class="text-gray-700">We source only the best, locally grown ingredients to bring fresh, healthy meals to your table.</p>
+      </div>
+      
+      <!-- Feature 2 -->
+      <div class="p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+        <div class="text-red-500 text-4xl mb-4">
+          <i class="fas fa-utensils"></i> <!-- You can replace this with your own icon or an SVG -->
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Exceptional Service</h3>
+        <p class="text-gray-700">Our friendly staff is dedicated to making your dining experience seamless and memorable.</p>
+      </div>
+      
+      <!-- Feature 3 -->
+      <div class="p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+        <div class="text-red-500 text-4xl mb-4">
+          <i class="fas fa-cocktail"></i> <!-- You can replace this with your own icon or an SVG -->
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Signature Drinks</h3>
+        <p class="text-gray-700">Our exclusive drinks menu features crafted cocktails and unique beverages for every taste.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- TESTIMONIALS -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-[Playfair Display]">
+      What Our Guests Are Saying
+    </h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+      Hear from our valued guests who’ve experienced the taste and atmosphere of Onarthok-Rest.
+    </p>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide bg-white shadow-lg rounded-xl p-8 mx-4 flex flex-col justify-between min-h-[420px]">
+          <div class="flex justify-center mb-6">
+            <img src="assets/images/testimonial-1.jpg" alt="Customer 1" class="w-24 h-24 object-cover rounded-full border-4 border-white shadow-md">
+          </div>
+          <p class="text-gray-700 text-lg mb-6 flex-grow">“Onarthok-Rest delivers an exceptional dining experience. From the delicious food to the outstanding service — I was impressed!”</p>
+          <div>
+            <h4 class="font-semibold text-gray-800">John Doe</h4>
+            <p class="text-sm text-gray-600">Food Enthusiast</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide bg-white shadow-lg rounded-xl p-8 mx-4 flex flex-col justify-between min-h-[420px]">
+          <div class="flex justify-center mb-6">
+            <img src="assets/images/testimonial-2.jpg" alt="Customer 2" class="w-24 h-24 object-cover rounded-full border-4 border-white shadow-md">
+          </div>
+          <p class="text-gray-700 text-lg mb-6 flex-grow">“Every visit to Onarthok-Rest is a treat! The ambiance is cozy, and the chefs really know how to satisfy your cravings.”</p>
+          <div>
+            <h4 class="font-semibold text-gray-800">Sarah Williams</h4>
+            <p class="text-sm text-gray-600">Restaurant Critic</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide bg-white shadow-lg rounded-xl p-8 mx-4 flex flex-col justify-between min-h-[420px]">
+          <div class="flex justify-center mb-6">
+            <img src="assets/images/testimonial-3.jpg" alt="Customer 3" class="w-24 h-24 object-cover rounded-full border-4 border-white shadow-md">
+          </div>
+          <p class="text-gray-700 text-lg mb-6 flex-grow">“Fantastic food, warm ambiance, and friendly staff — what more could you want? Highly recommended!”</p>
+          <div>
+            <h4 class="font-semibold text-gray-800">Emma Stone</h4>
+            <p class="text-sm text-gray-600">Local Blogger</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-200 pt-16 pb-6">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Logo & Description -->
+    <div>
+      <h2 class="text-2xl font-bold text-white mb-4 font-[Playfair Display]">Onarthok-Rest</h2>
+      <p class="text-gray-400">
+        A premium culinary experience. From bold flavors to unforgettable ambience, we serve you excellence.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+        <li><a href="menu.html" class="hover:text-white transition">Menu</a></li>
+        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+      <p class="text-gray-400">123 Food Street, Culinary City</p>
+      <p class="text-gray-400">Phone: +123 456 7890</p>
+      <p class="text-gray-400">Email: hello@onarthokrest.com</p>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+    © 2025 Onarthok-Rest. All rights reserved.
+  </div>
+</footer>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Config -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+<!-- Page content ends here -->
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
+
+</body>
+</html>

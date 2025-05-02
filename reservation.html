@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation - Onarthok Rest</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- 🔻 Logo -->
+    <a href="index.html" class="text-2xl font-bold text-red-600 font-[Playfair Display]">
+      OnarthokRest
+    </a>
+
+    <!-- 🔻 Toggle Button (Mobile) -->
+    <button id="menu-toggle" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+      ☰
+    </button>
+
+    <!-- 🔻 Nav Links -->
+    <nav id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-[60px] left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none p-4 md:p-0 z-50">
+      <a href="index.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">About</a>
+      <a href="menu.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Menu</a>
+      <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Gallery</a>
+      <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Blog</a>
+      <a href="reservation.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Reservation</a>
+      <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- 🔻 Hero Section -->
+  <section class="bg-cover bg-center h-[300px] flex items-center justify-center text-white text-center" style="background-image: url('https://images.unsplash.com/photo-1673307317880-5c3a71f7d00e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="bg-black bg-opacity-60 p-6 rounded">
+      <h1 class="text-4xl font-bold font-[Playfair Display]">Make a Reservation</h1>
+      <p class="mt-2 text-lg">We’re excited to serve you!</p>
+    </div>
+  </section>
+
+  <!-- 🔻 Reservation Form -->
+  <section class="py-16 px-6">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Book Your Table</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <input type="email" placeholder="Email Address" class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        <input type="tel" placeholder="Phone Number" class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        
+        <div class="flex flex-col md:flex-row gap-4">
+          <input type="date" class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" required>
+          <input type="time" class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" required>
+        </div>
+
+        <select class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500" required>
+          <option value="">Select Number of Guests</option>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5+ Guests</option>
+        </select>
+
+        <textarea rows="4" placeholder="Special Requests (Optional)" class="w-full border p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+
+        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md w-full font-medium transition">
+          Confirm Reservation
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔻 Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 Onarthok Rest. All rights reserved.</p>
+  </footer>
+
+  <!-- 🔻 Toggle Script for Mobile Menu -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

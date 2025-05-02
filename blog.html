@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Onarthok Rest</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- 🔻 Logo -->
+    <a href="index.html" class="text-2xl font-bold text-red-600 font-[Playfair Display]">
+      OnarthokRest
+    </a>
+
+    <!-- 🔻 Toggle Button (Mobile) -->
+    <button id="menu-toggle" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+      ☰
+    </button>
+
+    <!-- 🔻 Nav Links -->
+    <nav id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-[60px] left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none p-4 md:p-0 z-50">
+      <a href="index.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">About</a>
+      <a href="menu.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Menu</a>
+      <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Gallery</a>
+      <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Blog</a>
+      <a href="reservation.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Reservation</a>
+      <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- 🔻 Hero Section -->
+  <section class="bg-cover bg-center h-[300px] flex items-center justify-center text-white text-center" style="background-image: url('https://images.unsplash.com/photo-1673307317880-5c3a71f7d00e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="bg-black bg-opacity-60 p-6 rounded">
+      <h1 class="text-4xl font-bold font-[Playfair Display]">Our Blog</h1>
+      <p class="mt-2 text-lg">Latest news, recipes & behind-the-scenes stories</p>
+    </div>
+  </section>
+
+  <!-- 🔻 Blog Posts -->
+  <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Blog Post Card -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="assets/images/blog1.jpg" alt="Blog 1" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">5 Must-Try Dishes at Onarthok Rest</h3>
+          <p class="text-gray-600 text-sm mb-4">Discover our chef’s top picks that guests love again and again.</p>
+          <a href="#" class="text-red-600 hover:underline">Read More</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="assets/images/blog2.jpg" alt="Blog 2" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Behind the Scenes: Our Kitchen</h3>
+          <p class="text-gray-600 text-sm mb-4">Take a peek into the artistry and care behind every plate we serve.</p>
+          <a href="#" class="text-red-600 hover:underline">Read More</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="assets/images/blog3.jpg" alt="Blog 3" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Holiday Events You Can’t Miss</h3>
+          <p class="text-gray-600 text-sm mb-4">Mark your calendar for our special holiday menus and themed nights.</p>
+          <a href="#" class="text-red-600 hover:underline">Read More</a>
+        </div>
+      </div>
+	  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="assets/images/blog4.jpg" alt="Blog 2" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Behind the Scenes: Our Kitchen</h3>
+          <p class="text-gray-600 text-sm mb-4">Take a peek into the artistry and care behind every plate we serve.</p>
+          <a href="#" class="text-red-600 hover:underline">Read More</a>
+        </div>
+      </div>
+	  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="assets/images/blog2.jpg" alt="Blog 2" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Behind the Scenes: Our Kitchen</h3>
+          <p class="text-gray-600 text-sm mb-4">Take a peek into the artistry and care behind every plate we serve.</p>
+          <a href="#" class="text-red-600 hover:underline">Read More</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="assets/images/blog3.jpg" alt="Blog 3" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Holiday Events You Can’t Miss</h3>
+          <p class="text-gray-600 text-sm mb-4">Mark your calendar for our special holiday menus and themed nights.</p>
+          <a href="#" class="text-red-600 hover:underline">Read More</a>
+        </div>
+
+      <!-- Add more blog cards if needed -->
+
+    </div>
+  </section>
+  <!-- NEWSLETTER SUBSCRIBE -->
+<section class="bg-red-50 py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 font-[Playfair Display] mb-4">
+      Subscribe to Our Newsletter
+    </h2>
+    <p class="text-gray-600 mb-8 text-lg">
+      Get the latest recipes, special offers, and restaurant news delivered straight to your inbox.
+    </p>
+    
+    <form class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+      <input type="email" placeholder="Enter your email"
+             class="w-full sm:flex-1 px-5 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 transition" />
+      <button type="submit"
+              class="bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+<!-- FOOTER SECTION -->
+<footer class="bg-gray-900 text-gray-300 pt-16">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 pb-12">
+    <!-- About -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-4">Onarthok Rest</h3>
+      <p>Experience premium dining with the warmth of home. Our passion for food shines through every dish we serve.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="menu.html" class="hover:text-red-500 transition">Menu</a></li>
+        <li><a href="about.html" class="hover:text-red-500 transition">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hours -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Opening Hours</h4>
+      <ul class="space-y-1">
+        <li>Mon–Fri: 11am – 10pm</li>
+        <li>Saturday: 12pm – 11pm</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+      <p>123 Flavor St.<br>Food City, FL 12345</p>
+      <p class="mt-2">Phone: (123) 456-7890<br>Email: info@onarthokrest.com</p>
+    </div>
+  </div>
+
+  <!-- 🔻 Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 Onarthok Rest. All rights reserved.</p>
+  </footer>
+
+  <!-- 🔻 Toggle Script for Mobile Menu -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

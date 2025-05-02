@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onarthok Rest – Premium Restaurant Theme</title>
+
+  <!-- Tailwind CSS CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts (optional - nice serif and sans combo) -->
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons (CDN) -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+   <!-- Swiper.js (CDN) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom Styles (you can create this later) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-white text-gray-800 font-[Inter]">
+
+  <!-- TOPBAR -->
+  <div class="bg-gray-100 text-sm py-2 px-4 flex justify-between items-center">
+    <div>
+      <span class="mr-4">📞 +123 456 7890</span>
+      <span>📍 Dhaka, Bangladesh</span>
+    </div>
+    <div class="space-x-3">
+      <a href="#" class="hover:text-red-600">Facebook</a>
+      <a href="#" class="hover:text-red-600">Instagram</a>
+    </div>
+  </div>
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- 🔻 Logo -->
+    <a href="index.html" class="text-2xl font-bold text-red-600 font-[Playfair Display]">
+      OnarthokRest
+    </a>
+
+    <!-- 🔻 Toggle Button (Mobile) -->
+    <button id="menu-toggle" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+      ☰
+    </button>
+
+    <!-- 🔻 Nav Links -->
+    <nav id="menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-[60px] left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none p-4 md:p-0 z-50">
+      <a href="index.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Home</a>
+      <a href="about.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">About</a>
+      <a href="menu.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Menu</a>
+      <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Gallery</a>
+      <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Blog</a>
+      <a href="reservation.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Reservation</a>
+      <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO SECTION (Next step we'll design this) -->
+  <section class="h-[90vh] bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('assets/images/hero.jpg');">
+    <div class="text-center bg-black bg-opacity-50 p-10 rounded-lg">
+      <h1 class="text-4xl md:text-6xl font-[Playfair Display] mb-4">Welcome to Onarthok Rest</h1>
+      <p class="text-lg mb-6">A modern culinary experience in the heart of the city</p>
+      <a href="menu.html" class="bg-red-600 px-6 py-3 rounded text-white font-semibold hover:bg-red-700">View Menu</a>
+      <a href="reservation.html" class="ml-4 border border-white px-6 py-3 rounded hover:bg-white hover:text-red-600">Book a Table</a>
+    </div>
+  </section>
+  <!-- ABOUT / WELCOME SECTION -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+    <!-- Left Side: Image -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <img src="assets/images/about.jpg" alt="Our Story" class="rounded-2xl shadow-lg w-full">
+    </div>
+    
+    <!-- Right Side: Text -->
+    <div class="md:w-1/2 md:pl-12">
+      <h2 class="text-3xl font-[Playfair Display] mb-4 text-red-600">Our Story</h2>
+      <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+        At Onarthok Rest, we believe that every meal tells a story. Our dishes are crafted with love, inspired by tradition, and plated with innovation. Whether you're dining in or grabbing a bite to go, we bring the finest flavors to your plate.
+      </p>
+      <p class="text-gray-600 mb-6">
+        From farm-fresh ingredients to our signature culinary techniques, we invite you to taste the difference. Welcome to a dining experience like no other.
+      </p>
+      <a href="about.html" class="bg-red-600 px-6 py-3 rounded text-white font-semibold hover:bg-red-700 transition">Learn More</a>
+    </div>
+  </div>
+</section>
+<!-- FEATURED MENU SECTION -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-[Playfair Display] mb-4 text-red-600">Featured Dishes</h2>
+    <p class="mb-12 text-gray-600">Taste the chef's special creations that keep our guests coming back.</p>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Dish 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="assets/images/dish1.jpg" alt="Dish 1" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Spicy Grilled Chicken</h3>
+          <p class="text-gray-600 mb-4">Marinated in our secret blend and grilled to perfection.</p>
+          <div class="text-red-600 font-bold text-lg">$12.99</div>
+        </div>
+      </div>
+
+      <!-- Dish 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="assets/images/dish2.jpg" alt="Dish 2" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Creamy Mushroom Pasta</h3>
+          <p class="text-gray-600 mb-4">Fresh pasta tossed with wild mushrooms in a creamy sauce.</p>
+          <div class="text-red-600 font-bold text-lg">$10.49</div>
+        </div>
+      </div>
+
+      <!-- Dish 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="assets/images/dish3.jpg" alt="Dish 3" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Classic Beef Burger</h3>
+          <p class="text-gray-600 mb-4">Juicy beef patty, melted cheese, fresh lettuce and tomato.</p>
+          <div class="text-red-600 font-bold text-lg">$9.99</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <a href="menu.html" class="bg-red-600 text-white px-8 py-3 rounded font-semibold hover:bg-red-700 transition">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="py-20 bg-white" id="services">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-[Playfair Display]">
+      Our Signature Services
+    </h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+      Whether you're dining in or celebrating a special moment, Onarthok-Rest is here to serve you in style.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+      
+      <!-- Service 1 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <div class="text-4xl mb-4 text-red-500">🍽️</div>
+        <h3 class="text-xl font-semibold mb-2">Dine-In Experience</h3>
+        <p class="text-gray-600">Enjoy your meals in a cozy, beautifully designed space with exceptional service.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <div class="text-4xl mb-4 text-yellow-500">🥡</div>
+        <h3 class="text-xl font-semibold mb-2">Takeaway</h3>
+        <p class="text-gray-600">Grab your favorite dishes on the go without compromising quality or taste.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <div class="text-4xl mb-4 text-green-500">🍾</div>
+        <h3 class="text-xl font-semibold mb-2">Catering</h3>
+        <p class="text-gray-600">We bring the flavor to your event — weddings, parties, or business meetings.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <div class="text-4xl mb-4 text-blue-500">🎉</div>
+        <h3 class="text-xl font-semibold mb-2">Private Events</h3>
+        <p class="text-gray-600">Host memorable private dining events with custom menus and full service.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- RESERVATION SECTION -->
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-[Playfair Display] mb-4 text-red-600">Book a Table</h2>
+    <p class="text-gray-600 mb-10">Reserve your spot in just a few clicks. We’re ready to serve you!</p>
+
+    <form class="grid gap-6 md:grid-cols-2 text-left">
+      <!-- Name -->
+      <div>
+        <label class="block mb-2 text-sm font-semibold">Full Name</label>
+        <input type="text" placeholder="John Doe" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-400">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block mb-2 text-sm font-semibold">Email Address</label>
+        <input type="email" placeholder="john@example.com" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-400">
+      </div>
+
+      <!-- Date -->
+      <div>
+        <label class="block mb-2 text-sm font-semibold">Date</label>
+        <input type="date" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-400">
+      </div>
+
+      <!-- Time -->
+      <div>
+        <label class="block mb-2 text-sm font-semibold">Time</label>
+        <input type="time" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-400">
+      </div>
+
+      <!-- Guests -->
+      <div class="md:col-span-2">
+        <label class="block mb-2 text-sm font-semibold">Number of Guests</label>
+        <input type="number" min="1" placeholder="2" class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-400">
+      </div>
+
+      <!-- Submit -->
+      <div class="md:col-span-2 text-center">
+        <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded font-semibold hover:bg-red-700 transition">Make Reservation</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- GALLERY SECTION -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-[Playfair Display] mb-4 text-red-600">Gallery</h2>
+    <p class="text-gray-600 mb-10">A taste of what you’ll experience at Onarthok Rest.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div class="h-64 overflow-hidden rounded-xl shadow-md hover:scale-105 transition duration-300">
+    <img src="assets/images/gallery1.jpg" alt="Gallery 1" class="w-full h-full object-cover">
+  </div>
+  <div class="h-64 overflow-hidden rounded-xl shadow-md hover:scale-105 transition duration-300">
+    <img src="assets/images/gallery2.jpg" alt="Gallery 2" class="w-full h-full object-cover">
+  </div>
+  <div class="h-64 overflow-hidden rounded-xl shadow-md hover:scale-105 transition duration-300">
+    <img src="assets/images/gallery3.jpg" alt="Gallery 3" class="w-full h-full object-cover">
+  </div>
+  <div class="h-64 overflow-hidden rounded-xl shadow-md hover:scale-105 transition duration-300">
+    <img src="assets/images/gallery4.jpg" alt="Gallery 4" class="w-full h-full object-cover">
+  </div>
+  <div class="h-64 overflow-hidden rounded-xl shadow-md hover:scale-105 transition duration-300">
+    <img src="assets/images/gallery5.jpg" alt="Gallery 5" class="w-full h-full object-cover">
+  </div>
+  <div class="h-64 overflow-hidden rounded-xl shadow-md hover:scale-105 transition duration-300">
+    <img src="assets/images/gallery6.jpg" alt="Gallery 6" class="w-full h-full object-cover">
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-[Playfair Display] mb-4 text-red-600">What Our Guests Say</h2>
+    <p class="text-gray-600 mb-12">Real reviews from real food lovers!</p>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Testimonial 1 -->
+      <div class="bg-gray-50 rounded-2xl shadow p-6 text-left hover:shadow-lg transition">
+        <p class="text-gray-700 mb-4">“The atmosphere was cozy and the food was absolutely delicious. I highly recommend the grilled chicken!”</p>
+        <div class="flex items-center gap-4">
+          <img src="assets/images/user1.jpg" alt="User 1" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <p class="font-semibold text-gray-800">Sarah J.</p>
+            <p class="text-sm text-gray-500">Food Blogger</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-gray-50 rounded-2xl shadow p-6 text-left hover:shadow-lg transition">
+        <p class="text-gray-700 mb-4">“Hands down the best pasta I’ve had in town. Great service and lovely ambiance.”</p>
+        <div class="flex items-center gap-4">
+          <img src="assets/images/user2.jpg" alt="User 2" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <p class="font-semibold text-gray-800">Michael R.</p>
+            <p class="text-sm text-gray-500">Local Guide</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-gray-50 rounded-2xl shadow p-6 text-left hover:shadow-lg transition">
+        <p class="text-gray-700 mb-4">“From starters to dessert, everything was perfect. This is our new go-to place!”</p>
+        <div class="flex items-center gap-4">
+          <img src="assets/images/user3.jpg" alt="User 3" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <p class="font-semibold text-gray-800">Ayesha K.</p>
+            <p class="text-sm text-gray-500">Frequent Visitor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEWSLETTER SUBSCRIBE -->
+<section class="bg-red-50 py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 font-[Playfair Display] mb-4">
+      Subscribe to Our Newsletter
+    </h2>
+    <p class="text-gray-600 mb-8 text-lg">
+      Get the latest recipes, special offers, and restaurant news delivered straight to your inbox.
+    </p>
+    
+    <form class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+      <input type="email" placeholder="Enter your email"
+             class="w-full sm:flex-1 px-5 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 transition" />
+      <button type="submit"
+              class="bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="bg-gray-900 text-gray-300 pt-16">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 pb-12">
+    <!-- About -->
+    <div>
+      <h3 class="text-xl font-semibold text-white mb-4">Onarthok Rest</h3>
+      <p>Experience premium dining with the warmth of home. Our passion for food shines through every dish we serve.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="menu.html" class="hover:text-red-500 transition">Menu</a></li>
+        <li><a href="about.html" class="hover:text-red-500 transition">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hours -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Opening Hours</h4>
+      <ul class="space-y-1">
+        <li>Mon–Fri: 11am – 10pm</li>
+        <li>Saturday: 12pm – 11pm</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+      <p>123 Flavor St.<br>Food City, FL 12345</p>
+      <p class="mt-2">Phone: (123) 456-7890<br>Email: info@onarthokrest.com</p>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT SECTION -->
+  <div class="bg-gray-800 text-center text-sm text-gray-400 py-4">
+    &copy; 2025 Onarthok Rest. All rights reserved. | Designed with ❤️
+  </div>
+</footer>
+<!-- Page content ends here -->
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
