@@ -1,1 +1,66 @@
 
+/* === Tailwind Base (generated via Tailwind CLI in real projects) === */
+/* This file is a placeholder for your Tailwind compiled CSS + custom styles */
+
+/* You should compile this using Tailwind CLI in real setup, like:
+   npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify
+*/
+
+/* === Custom Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* === Custom Utilities === */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .font-[Playfair\ Display] {
+  font-family: 'Playfair Display', serif;
+}
+
+/* === Custom Overrides === */
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #dc2626; /* Tailwind's red-600 */
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* === Custom Section Styling (if any) === */
+.hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* === Responsive Navbar === */
+#menu-toggle {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  #menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* === Newsletter Input === */
+input[type="email"] {
+  transition: border 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #dc2626;
+  outline: none;
+}
+
